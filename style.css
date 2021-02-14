@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=Rakkas&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rakkas&display=swap");
+@font-face {
+  src: url(fonts/bellbottom_[allfont.net].ttf);
+  font-family: BellBottom;
+}
+@font-face {
+  src: url(fonts/WindsorBT-Roman.otf);
+  font-family: Windsor;
+}
+
+body {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+#globalNav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#globalNav > * {
+  margin: 0;
+}
+
+#logo img {
+  max-width: 80%;
+}
+
+#navBar {
+  display: flex;
+  font-size: 1.1rem;
+  margin-left: auto;
+  margin-right: 2rem;
+  margin-top: auto;
+  text-decoration: none;
+}
+
+#navBar a {
+  margin: 0.8rem;
+  color: black;
+  text-decoration: none;
+}
+
+#navBar a:hover {
+  text-decoration: underline;
+}
+
+#navBar2 {
+  display: flex;
+  font-size: 1.1rem;
+  margin-right: auto;
+  margin-top: auto;
+  text-decoration: none;
+}
+
+#navBar2 a {
+  margin: 0.8rem;
+  color: black;
+  text-decoration: none;
+}
+
+#navBar2 a:hover {
+  text-decoration: underline;
+}
+
+/*Category*/
+
+.category-page main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 400px));
+  gap: 1rem;
+}
+
+.category-page main h1 {
+  grid-column: 1/-1;
+  font-size: 3rem;
+  font-weight: 300;
+  color: black;
+  font-family: BellBottom;
+}
+
+.articleType {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.articleType a {
+  text-decoration: none;
+  color: black;
+}
+
+.articleType a:hover {
+  color: hotpink;
+}
+
+.articleType a:active {
+  border: 0.5rem solid yellowgreen;
+}
+
+.articleType img {
+  width: auto;
+  height: auto;
+}
+
+.articleName {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-top: 4rem;
+  padding: 4rem;
+}
+
+/*
+#Accessories {
+  border: 0.5rem solid #df4ced;
+}
+
+#Apparel {
+  border: 0.5rem solid #df4ced;
+}
+
+#Footwear {
+  border: 0.5rem solid #df4ced;
+}
+
+#FreeItems {
+  border: 0.5rem solid #df4ced;
+}
+
+#PersonalCare {
+  border: 0.5rem solid #df4ced;
+}
+
+#SportingGoods {
+  border: 0.5rem solid #df4ced;
+}*/
+
+#Accessories {
+  background-image: url(images/1565.webp);
+  background-repeat: no-repeat;
+  background-size: 30rem;
+  border-radius: 0%;
+  max-width: 100%;
+}
+
+#Apparel {
+  background-image: url(images/1164.webp);
+  background-repeat: no-repeat;
+  background-size: 30rem;
+  border-radius: 0%;
+  max-width: 100%;
+}
+
+#Footwear {
+  background-image: url(images/1542.webp);
+  background-repeat: no-repeat;
+  background-size: 20rem;
+  border-radius: 0%;
+  max-width: 100%;
+}
+
+#FreeItems {
+  background-image: url(images/free-items2.jpg);
+  background-repeat: no-repeat;
+  background-size: 30rem;
+  border-radius: 0%;
+  max-width: 100%;
+}
+
+#PersonalCare {
+  background-image: url(images/personal-care2.jpg);
+  background-repeat: no-repeat;
+  background-size: 30rem;
+  border-radius: 0%;
+  max-width: 100%;
+}
+
+#SportingGoods {
+  background-image: url(images/1550.webp);
+  background-repeat: no-repeat;
+  background-size: 30rem;
+  border-radius: 0%;
+  max-width: 100%;
+}
+
+/*Product list*/
+
+.product-list main h1 {
+  grid-column: 1/-1;
+  font-weight: 300;
+  font-size: 3rem;
+  font-family: BellBottom;
+}
+
+#productGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
+  gap: 2rem;
+}
+
+.product-list article h2 {
+  font-size: 1rem;
+  flex-grow: 3;
+  text-align: center;
+}
+
+.product-list article > * {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.subtle {
+  color: #fb67d9;
+  text-align: center;
+}
+
+.product-list article {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-list img {
+  max-width: 100%;
+}
+
+.product-list .priceDifference {
+  display: flex;
+  justify-content: center;
+}
+
+.product-list .discounted {
+  margin-left: 2rem;
+  margin-top: -0.2rem;
+}
+
+.product-list article.soldOut::before {
+  content: "SOLD OUT";
+  position: absolute;
+  background-color: hotpink;
+  color: white;
+  padding: 1rem;
+  font-family: BellBottom;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.product-list article .discounted {
+  text-decoration: line-through;
+}
+
+.product-list article .discounted .hidden {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.discounted > p {
+  margin-bottom: 0;
+}
+
+.productlist article {
+  margin-bottom: 1rem;
+}
+
+.discounted p:last-child {
+  background: var(--off-color);
+  padding: 0.2rem;
+}
+
+.product-list article a {
+  text-decoration: none;
+  color: black;
+}
+
+.product-list article img:active {
+  border: 0.5rem solid blue;
+}
+
+/*Product*/
+.breadcrumbs {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.75rem;
+  color: gray;
+  margin-top: 1rem;
+}
+
+.breadcrumbs a {
+  color: gray;
+  text-decoration: black;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs li::after {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  content: "";
+  transition: all 0.3s;
+}
+
+.breadcrumbs li:last-child::after {
+  background: none;
+}
+
+.breadcrumbs p {
+  margin-top: 0;
+  margin-right: 1rem;
+  margin-left: -1rem;
+}
+
+#productBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+#productBox img {
+  max-width: 100%;
+}
+
+#productBox h2 {
+  font-family: BellBottom;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+.product-page .priceDifference {
+  display: flex;
+}
+
+.product-page .soldOut::before {
+  content: "SOLD OUT";
+  position: absolute;
+  background-color: hotpink;
+  color: white;
+  padding: 1rem;
+  font-family: BellBottom;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.product-page .discounted {
+  text-decoration: line-through;
+  margin-left: 2rem;
+  margin-top: -0.1rem;
+}
+
+.product-page .discounted span {
+  display: none;
+}
+
+#sizeChart {
+  display: flex;
+}
+
+.sizeButton {
+  background-color: hotpink;
+  border: solid hotpink;
+  margin: 0.3rem;
+  margin-top: 0;
+  padding: 1rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  font-size: 0.8rem;
+}
+
+.sizeButton:first-child {
+  padding: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.sizeButton:hover {
+  background-color: pink;
+  border: solid pink;
+}
+
+.cartButton {
+  background: pink;
+  border: solid pink;
+  margin-top: auto;
+  color: black;
+  padding: 1.5rem;
+  padding-right: 6rem;
+  padding-left: 6rem;
+  font-size: 1.5rem;
+  font-family: BellBottom;
+  margin-top: 2rem;
+}
+
+.cartButton:hover {
+  background-color: hotpink;
+  border: solid hotpink;
+}

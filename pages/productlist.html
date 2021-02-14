@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product list</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="product-list">
+    <header id="globalNav">
+      <div id="navBar2">
+        <a href="category.html">Shop</a>
+        <a href="#">About us</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div id="logo">
+        <a href="../index.html"
+          ><img src="../images/logo-positive-medium.png" alt="logo"
+        /></a>
+      </div>
+      <nav id="navBar">
+        <a href="#">Sign in</a>
+        <a href="#">Bag</a>
+      </nav>
+    </header>
+
+    <main>
+      <ol class="breadcrumbs">
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
+        <p>></p>
+        <li>
+          <a href="../pages/category.html">Categories</a>
+        </li>
+        <p>></p>
+        <li>
+          <a class="category" href="../pages/productlist.html">Apparel</a>
+        </li>
+      </ol>
+
+      <h1>Apparel</h1>
+
+      <div id="productGrid">
+
+        <template id="productDisplayTemplate">
+        <article class="productDisplay onSale">
+        <a class="productLink" href="../pages/product.html?id=1565"
+          ><img class="productimage" src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="1165"
+        /></a>
+        <a class="productLink" href="../pages/product.html?id=1565"
+          ><h2>Mean Team India Cricket Jersey</h2></a
+        >
+        <p class="subtle">T-shirts | Nike</p>
+        <div class="priceDifference">
+        <p class="price">1372.25 DKK</p>
+        <div class="discounted">
+          <p class="hidden">2495 DKK</p>
+        </div>
+      </div>
+        </article>
+        </template>
+
+        <!--<article class="productDisplay onSale soldOut">
+        <a href="../pages/product.html"
+          ><img src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="1164"
+        /></a>
+        <a href="../pages/product.html"
+          ><h2>Blue T20 Indian Cricket Jersey</h2></a
+        >
+        <p class="subtle">T-shirts | Nike</p>
+        <div class="priceDifference">
+        <p class="price">1148.4 DKK</p>
+        <div class="discounted">
+          <p>1595 DKK</p>
+          </div>
+        </article>
+
+        <article class="productDisplay onSale soldOut">
+          <a href="../pages/product.html"
+            ><img src="https://kea-alt-del.dk/t7/images/webp/640/1530.webp" alt="1530"
+          /></a>
+          <a href="../pages/product.html"
+            ><h2>Track Jacket</h2></a
+          >
+          <p class="subtle">Jackets | Puma</p>
+          <div class="priceDifference">
+          <p class="price">1848.6 DKK</p>
+          <div class="discounted">
+            <p>4299 DKK</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="productDisplay">
+            <a href="../pages/product.html"
+              ><img src="https://kea-alt-del.dk/t7/images/webp/640/1531.webp" alt="1531"
+            /></a>
+            <a href="../pages/product.html"
+              ><h2>Grey Solid Round Neck T-Shirt</h2></a
+            >
+            <p class="subtle">T-shirts | Puma</p>
+            <div class="priceDifference">
+            <p class="price">799 DKK</p>
+            <div class="discounted">
+              <p class="hidden">799 DKK</p>
+              </div>
+        </article>-->
+      </div>
+        
+      </div>
+    </main>
+    <script src="../js/productlist.js"></script>
+  </body>
+</html>
